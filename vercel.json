@@ -1,0 +1,8 @@
+{
+  "rewrites": [
+    {
+      "source": "/books/:path*",
+      "destination": "/index.html"
+    }
+  ]
+}

@@ -3,6 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
+  <base href="/">
   <title>Drew David S Abanilla — Artist &amp; Author</title>
 <style>
   :root{
@@ -668,7 +669,7 @@
   .bookInfo .readRow{display:flex; gap:10px; flex-wrap:wrap; margin-top:16px}
   .readBtn{background:var(--navy); color:#fff !important; border:0; border-radius:10px; font-weight:800; font-size:15px; padding:14px 26px; cursor:pointer; box-shadow:0 8px 20px rgba(12,27,77,.25); transition:transform .15s ease}
   .readBtn:hover{transform:translateY(-2px)}
-  .bookView{position:fixed; inset:0; z-index:80; background:#0a1030; display:flex; flex-direction:column}
+  .bookView{position:fixed; inset:0; z-index:110; background:#0a1030; display:flex; flex-direction:column}
   .bookBackdrop{position:absolute; inset:0; z-index:0; overflow:hidden}
   .bookBackdrop img{width:100%; height:100%; object-fit:cover; object-position:center top; display:block}
   .bookView::after{content:""; position:absolute; inset:0; background:linear-gradient(180deg,rgba(8,12,35,.42),rgba(8,12,35,.82)); z-index:0}
@@ -682,7 +683,7 @@
   #bookCastWrapEl .castGrid{display:grid; grid-template-columns:repeat(4,1fr); gap:12px}
   @media(max-width:900px){.bookPage{grid-template-columns:1fr}.bookPage .selCover{min-height:auto}}
   @media(max-width:560px){#bookCastWrapEl .castGrid{grid-template-columns:1fr 1fr}}
-  .readerView{position:fixed; inset:0; z-index:90; background:linear-gradient(180deg,#eef2ff,#e9effb); display:flex; flex-direction:column}
+  .readerView{position:fixed; inset:0; z-index:120; background:linear-gradient(180deg,#eef2ff,#e9effb); display:flex; flex-direction:column}
   .readerView[hidden]{display:none}
   .readerTop{background:var(--navy); color:#fff; padding:10px 14px; display:flex; gap:10px; align-items:center; box-shadow:0 4px 18px rgba(0,0,0,.3); flex:none}
   .rTitle{flex:1; min-width:0; text-align:center}
@@ -1069,41 +1070,6 @@
       <p class="secSub reveal">My novels — open a book for its chapters and cast.</p>
       <div class="filterRow" id="storyFilterEl"></div>
       <div class="storyGrid" id="storyGridEl"></div>
-      <div class="bookView" id="bookViewEl" hidden>
-        <div class="bookBackdrop"><img id="bookBackdropImg" alt=""></div>
-        <div class="readerTop">
-          <button class="rBtn" id="bookBackBtn" type="button">← Books</button>
-          <div class="rTitle"><b id="bookPageTitleEl"></b><span id="bookPageSubEl"></span></div>
-          <button class="rBtn gold" id="bookReadBtn" type="button">Read →</button>
-        </div>
-        <div class="bookPageBody">
-          <div class="bookPage">
-            <div class="selCover" id="selCoverEl"></div>
-            <div class="selMain">
-              <div class="bookInfo" id="bookInfoEl"></div>
-              <div class="selList">
-                <h4>CHAPTERS — TAP TO READ</h4>
-                <div id="bookPillsEl"></div>
-              </div>
-            </div>
-          </div>
-          <div class="castWrap" id="bookCastWrapEl">
-            <h4>MEET THE CAST — TAP TO ENLARGE</h4>
-            <div class="castGrid" id="bookCastGridEl"></div>
-          </div>
-        </div>
-      </div>
-      <div class="readerView" id="readerViewEl" hidden>
-        <div class="readerTop">
-          <button class="rBtn" id="readerBackBtn" type="button">← Book</button>
-          <div class="rTitle"><b id="readerBookEl"></b><span id="readerChapEl"></span></div>
-          <div class="rNav">
-            <button class="rBtn" id="readerPrevBtn" type="button">← Prev</button>
-            <button class="rBtn gold" id="readerNextBtn" type="button">Next →</button>
-          </div>
-        </div>
-        <div class="readerBody" id="readerBodyEl"></div>
-      </div>
     </div>
   </section>
   <div class="divider" style="background:#e9effb" aria-hidden="true"><svg viewBox="0 0 1440 72" preserveAspectRatio="none" style="width:100%;height:72px;display:block"><path fill="#0c1b4d" d="M0,0 C260,70 540,10 780,34 C1020,58 1220,6 1440,38 L1440,72 L0,72 Z"/></svg></div>
@@ -1213,6 +1179,42 @@
 </footer>
 
 <button class="toTop" id="toTopBtn" title="Back to top">↑</button>
+
+<div class="bookView" id="bookViewEl" hidden>
+  <div class="bookBackdrop"><img id="bookBackdropImg" alt=""></div>
+  <div class="readerTop">
+    <button class="rBtn" id="bookBackBtn" type="button">← Books</button>
+    <div class="rTitle"><b id="bookPageTitleEl"></b><span id="bookPageSubEl"></span></div>
+    <button class="rBtn gold" id="bookReadBtn" type="button">Read →</button>
+  </div>
+  <div class="bookPageBody">
+    <div class="bookPage">
+      <div class="selCover" id="selCoverEl"></div>
+      <div class="selMain">
+        <div class="bookInfo" id="bookInfoEl"></div>
+        <div class="selList">
+          <h4>CHAPTERS — TAP TO READ</h4>
+          <div id="bookPillsEl"></div>
+        </div>
+      </div>
+    </div>
+    <div class="castWrap" id="bookCastWrapEl">
+      <h4>MEET THE CAST — TAP TO ENLARGE</h4>
+      <div class="castGrid" id="bookCastGridEl"></div>
+    </div>
+  </div>
+</div>
+<div class="readerView" id="readerViewEl" hidden>
+  <div class="readerTop">
+    <button class="rBtn" id="readerBackBtn" type="button">← Book</button>
+    <div class="rTitle"><b id="readerBookEl"></b><span id="readerChapEl"></span></div>
+    <div class="rNav">
+      <button class="rBtn" id="readerPrevBtn" type="button">← Prev</button>
+      <button class="rBtn gold" id="readerNextBtn" type="button">Next →</button>
+    </div>
+  </div>
+  <div class="readerBody" id="readerBodyEl"></div>
+</div>
 
 <dialog id="viewDialog">
   <div class="modalHead"><h3 id="viewTitleEl">Preview</h3><button id="viewCloseBtn" type="button">Close ✕</button></div>
@@ -1896,6 +1898,39 @@ function setFeatAnim(i){
 let selStoryIdx = 0;
 let selChapIdx = 0;
 const chapCache = {};
+const portfolioTitle = document.title;
+function storySlug(story){
+  return story.title.toLowerCase().normalize("NFD").replace(/[\u0300-\u036f]/g, "")
+    .replace(/[^a-z0-9]+/g, "-").replace(/^-|-$/g, "");
+}
+function storyUrl(i, reading, itemIndex){
+  const story = SITE.stories[i];
+  const path = "/books/" + storySlug(story) + (reading ? "/read" : "");
+  const url = new URL(path, location.origin);
+  if (reading){
+    const key = story.pageDir && story.pageCount ? "page" : "chapter";
+    url.searchParams.set(key, String((itemIndex || 0) + 1));
+  }
+  return url.pathname + url.search;
+}
+function setStoryRoute(i, reading, itemIndex, mode){
+  const story = SITE.stories[i];
+  const slug = storySlug(story);
+  const url = storyUrl(i, reading, itemIndex);
+  const previous = history.state;
+  const state = reading
+    ? { portfolioRoute: "reader", bookSlug: slug, fromBook: mode === "push"
+        ? (previous?.portfolioRoute === "book" && previous.bookSlug === slug)
+          || location.pathname === "/books/" + slug
+          || location.pathname === "/books/" + slug + "/"
+        : !!previous?.fromBook }
+    : { portfolioRoute: "book", bookSlug: slug, fromPortfolio: mode === "push"
+        ? true
+        : !!previous?.fromPortfolio };
+  if (mode === "push") history.pushState(state, "", url);
+  else if (mode === "replace") history.replaceState(state, "", url);
+  document.title = reading ? (story.title + " — Read") : (story.title + " — Book");
+}
 async function loadChapter(s, i){
   const box = $("selBodyEl"); if (!box) return;
   try {
@@ -1909,16 +1944,31 @@ async function loadChapter(s, i){
     for (const p of parts){ const el = document.createElement("p"); el.textContent = p; box.appendChild(el); }
   } catch(e){ const l = box.querySelector(".chapLoad"); if (l) l.textContent = "Could not load chapter text."; }
 }
-function openBook(i){
+function showBook(i){
+  if (!SITE.stories[i]) return;
+  $("readerViewEl").hidden = true;
   renderBook(i == null ? selStoryIdx : i);
   $("bookViewEl").hidden = false;
   syncBodyLock();
   $("bookViewEl").querySelector(".bookPageBody").scrollTop = 0;
 }
+function openBook(i){
+  if (!SITE.stories[i]) return;
+  showBook(i);
+  setStoryRoute(i, false, 0, "push");
+}
 function closeBook(){
-  readerToken++;
+  const route = history.state;
+  if (route?.portfolioRoute === "book" && route.fromPortfolio){
+    history.back();
+    return;
+  }
+  history.replaceState(null, "", "/#stories");
+  document.title = portfolioTitle;
   $("bookViewEl").hidden = true;
+  $("readerViewEl").hidden = true;
   syncBodyLock();
+  requestAnimationFrame(() => $("stories").scrollIntoView({ block: "start" }));
 }
 function renderBook(i){
   const s = SITE.stories[i]; if (!s) return;
@@ -1959,13 +2009,15 @@ function renderBook(i){
   drawSelPills();
 }
 let readerToken = 0;
-async function openReader(ci){
+async function openReader(ci, historyMode, picturePage){
+  historyMode = historyMode || "push";
   const st0 = SITE.stories[selStoryIdx] || {};
   if (st0.pageDir && st0.pageCount){
     readerToken++;
     const total = st0.pageCount;
-    let pg = Math.max(0, Math.min(total - 1, ci || 0));
+    let pg = Math.max(0, Math.min(total - 1, picturePage == null ? (ci || 0) : picturePage));
     selChapIdx = 0;
+    if (historyMode !== "none") setStoryRoute(selStoryIdx, true, pg, historyMode);
     const pad = n => String(n).padStart(2, "0");
     const showPage = () => {
       const last = Math.min(pg + 1, total - 1);
@@ -1983,12 +2035,13 @@ async function openReader(ci){
         + `<button class="btn ghost" type="button" id="picNextBtn"${pg+2>=total?" disabled":""}>Next pages →</button></div></div>`;
       $("readerBodyEl").scrollTop = 0;
       const _pp = $("picPrevBtn"), _pn = $("picNextBtn");
-      if (_pp && pg > 0) _pp.onclick = () => { pg = Math.max(0, pg - 2); showPage(); };
-      if (_pn && pg + 2 < total) _pn.onclick = () => { pg = pg + 2; showPage(); };
+      if (_pp && pg > 0) _pp.onclick = () => { pg = Math.max(0, pg - 2); setStoryRoute(selStoryIdx, true, pg, "replace"); showPage(); };
+      if (_pn && pg + 2 < total) _pn.onclick = () => { pg = pg + 2; setStoryRoute(selStoryIdx, true, pg, "replace"); showPage(); };
     };
-    $("readerPrevBtn").onclick = () => { if (pg > 0){ pg = Math.max(0, pg - 2); showPage(); } };
-    $("readerNextBtn").onclick = () => { if (pg + 2 < total){ pg = pg + 2; showPage(); } };
+    $("readerPrevBtn").onclick = () => { if (pg > 0){ pg = Math.max(0, pg - 2); setStoryRoute(selStoryIdx, true, pg, "replace"); showPage(); } };
+    $("readerNextBtn").onclick = () => { if (pg + 2 < total){ pg = pg + 2; setStoryRoute(selStoryIdx, true, pg, "replace"); showPage(); } };
     showPage();
+    $("bookViewEl").hidden = true;
     $("readerViewEl").hidden = false;
     syncBodyLock();
     return;
@@ -1996,6 +2049,7 @@ async function openReader(ci){
   if (st0.pdf){
     selChapIdx = 0;
     readerToken++;
+    if (historyMode !== "none") setStoryRoute(selStoryIdx, true, 0, historyMode);
     $("readerBookEl").textContent = st0.title;
     $("readerChapEl").textContent = st0.tagline || "Picture book — flip through the pages";
     $("readerPrevBtn").disabled = true;
@@ -2004,14 +2058,16 @@ async function openReader(ci){
       + `<embed src="${st0.pdf}" type="application/pdf" style="width:100%;height:72vh;border:0;border-radius:8px;display:block">`
       + `<div class="readerEnd">— THE END —</div></div>`;
     $("readerBodyEl").scrollTop = 0;
+    $("bookViewEl").hidden = true;
     $("readerViewEl").hidden = false;
     syncBodyLock();
     return;
   }
   const chs = (SITE.stories[selStoryIdx]||{}).chapters || []; if (!chs.length) return;
-  $("readerPrevBtn").onclick = () => openReader(selChapIdx - 1);
-  $("readerNextBtn").onclick = () => openReader(selChapIdx + 1);
+  $("readerPrevBtn").onclick = () => openReader(selChapIdx - 1, "replace");
+  $("readerNextBtn").onclick = () => openReader(selChapIdx + 1, "replace");
   selChapIdx = Math.max(0, Math.min(chs.length - 1, ci));
+  if (historyMode !== "none") setStoryRoute(selStoryIdx, true, selChapIdx, historyMode);
   const c = chs[selChapIdx];
   const t = ++readerToken;
   document.querySelectorAll("#bookPillsEl .pill").forEach(b =>
@@ -2023,6 +2079,7 @@ async function openReader(ci){
   $("readerNextBtn").disabled = selChapIdx >= chs.length - 1;
   $("readerBodyEl").innerHTML = `<div class="readerPaper"><h2>Chapter ${c.n}: ${esc(c.title)}</h2><div class="rMeta">${esc(c.time)}</div><div class="chapLoad"><span class="spin"></span> Loading chapter…</div></div>`;
   $("readerBodyEl").scrollTop = 0;
+  $("bookViewEl").hidden = true;
   $("readerViewEl").hidden = false;
   syncBodyLock();
   try {
@@ -2037,8 +2094,8 @@ async function openReader(ci){
       + `<div class="readerFootNav"><button class="btn ghost" type="button" ${selChapIdx<=0?"disabled":""} id="rPrevB">← Prev chapter</button><button class="btn ghost" type="button" ${selChapIdx>=chs.length-1?"disabled":""} id="rNextB">Next chapter →</button></div>`;
     $("readerBodyEl").innerHTML = '<div class="readerPaper">' + h + '</div>';
     const _pb = $("rPrevB"), _nb = $("rNextB");
-    if (_pb && selChapIdx > 0) _pb.onclick = () => openReader(selChapIdx - 1);
-    if (_nb && selChapIdx < chs.length - 1) _nb.onclick = () => openReader(selChapIdx + 1);
+    if (_pb && selChapIdx > 0) _pb.onclick = () => openReader(selChapIdx - 1, "replace");
+    if (_nb && selChapIdx < chs.length - 1) _nb.onclick = () => openReader(selChapIdx + 1, "replace");
     $("readerBodyEl").scrollTop = 0;
   } catch(e){
     if (t !== readerToken) return;
@@ -2046,10 +2103,52 @@ async function openReader(ci){
   }
 }
 function closeReader(){
+  const route = history.state;
+  if (route?.portfolioRoute === "reader" && route.fromBook){
+    history.back();
+    return;
+  }
   readerToken++;
   $("readerViewEl").hidden = true;
+  if (SITE.stories[selStoryIdx]){
+    history.replaceState(null, "", storyUrl(selStoryIdx, false, 0));
+    document.title = SITE.stories[selStoryIdx].title + " — Book";
+  }
+  $("bookViewEl").hidden = false;
   syncBodyLock();
 }
+function syncStoryRoute(){
+  const match = location.pathname.match(/^\/books\/([^/]+)(\/read)?\/?$/);
+  if (!match){
+    readerToken++;
+    $("readerViewEl").hidden = true;
+    $("bookViewEl").hidden = true;
+    document.title = portfolioTitle;
+    syncBodyLock();
+    return;
+  }
+  const slug = match[1];
+  const storyIndex = SITE.stories.findIndex(story => storySlug(story) === slug);
+  if (storyIndex < 0){
+    history.replaceState(null, "", "/#stories");
+    document.title = portfolioTitle;
+    $("readerViewEl").hidden = true;
+    $("bookViewEl").hidden = true;
+    syncBodyLock();
+    requestAnimationFrame(() => $("stories").scrollIntoView({ block: "start" }));
+    return;
+  }
+  selStoryIdx = storyIndex;
+  document.title = SITE.stories[storyIndex].title + (match[2] ? " — Read" : " — Book");
+  showBook(storyIndex);
+  if (!match[2]) return;
+
+  const story = SITE.stories[storyIndex];
+  const key = story.pageDir && story.pageCount ? "page" : "chapter";
+  const requestedIndex = Math.max(0, (Number(new URLSearchParams(location.search).get(key)) || 1) - 1);
+  openReader(requestedIndex, "none", key === "page" ? requestedIndex : undefined);
+}
+window.addEventListener("popstate", syncStoryRoute);
 function drawSelPills(){
   $("bookPillsEl").innerHTML = ((SITE.stories[selStoryIdx]||{}).chapters||[]).map((c, i) =>
     `<button class="pill${i === selChapIdx ? " on" : ""}" data-i="${i}" type="button">Ch ${c.n} — ${esc(c.title)}</button>`).join("");
@@ -2535,6 +2634,7 @@ $("toTopBtn").onclick = () => scrollTo({ top: 0, behavior: "smooth" });
 
 render();
 renderHomeUpgrade();
+syncStoryRoute();
 
 </script>
 </body>
