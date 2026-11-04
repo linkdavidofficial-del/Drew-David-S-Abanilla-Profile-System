@@ -1,0 +1,241 @@
+Chapter 14: The Siege of Dirt Castle
+
+The gaming room in the Hololive EN building hummed with the collective whir of five high-end PCs, their RGB lighting casting a rainbow glow across the faces of five very stressed idols. Monitors displayed a desperate scene: a pathetic dirt-and-stone fortification perched atop a hill, surrounded by a writhing mass of hostile mobs that seemed to spawn faster than they could be killed.
+
+"AAHHHH!" Kiara's scream cut through the chaos, her hands flying across her keyboard with practiced panic. "The west wall is leaking! I repeat, the west wall is LEAKING!"
+
+"Build a second layer!" Calli's voice was steady, the calmest of the group despite the digital carnage unfolding on her screen. Her avatar swung a diamond sword with mechanical efficiency, cutting down zombies that clawed their way through the gaps.
+
+"We're out of stone!" Ame's voice cracked slightly, her usual detective composure fraying at the edges.
+
+"Build with dirt!" Ina suggested, her tone maintaining that characteristic zen quality even as her character frantically placed blocks to patch the crumbling eastern defenses.
+
+"I don't have dirt!" Kiara wailed, her inventory apparently as empty as her hope.
+
+"We are literally standing on a HILL!" Gura shouted back, somehow managing to sound both exasperated and amused. "It's made of dirt! DIG!"
+
+"Oh. Right." Kiara's avatar immediately began excavating the ground beneath her feet, creating dangerous holes in their defense even as she gathered materials to plug others.
+
+The night cycle in Minecraft had turned their casual exploration into a nightmarish siege. Zombies groaned and shambled from every direction, their pixelated arms outstretched. Skeletons stood in formation like some unholy archer battalion, firing arrows that whistled through the air with deadly accuracy. Spiders skittered up the sides of their makeshift fortress with unsettling speed, their multiple eyes glowing red in the darkness. Creepers—those silent, exploding harbingers of destruction—wove between the other mobs like green landmines with legs.
+
+And above it all, swooping down from the dark sky like demons, came the phantoms. Their translucent wings caught what little light existed, and their haunting shrieks added a layer of psychological warfare to the already overwhelming assault.
+
+"I was wrong!" Gura's admission came in a rush, guilt coloring every word. "I thought there was treasure! It looked like a jungle temple from the surface! I swear it did!"
+
+"That was a CAVE!" Calli's response was sharp, though not quite angry—more like a tired parent dealing with a particularly adventurous child. "A cave! With a creeper spawner inside! Do you know how rare those are? Do you know how DANGEROUS those are?"
+
+"We've moved past that!" Ame interjected, always trying to keep the team focused on solutions rather than problems. "What's done is done! We need to—"
+
+"CHARGED CREEPER!" Ina's warning came a second too late.
+
+The distinctive crackling of electricity filled their headphones, and on their screens, a creeper glowing with blue electrical energy—supercharged by a lightning strike—waddled toward their southern wall with ominous purpose.
+
+"Aw maaan!" The chorus came from all five idols simultaneously.
+
+"Skeletons firing from the north!" Kiara called out, her character taking damage from arrows that seemed to come from nowhere. "I'm down to three hearts!"
+
+"Take cover!" Calli commanded. "Get behind the walls! Ame, can you get that charged creeper?"
+
+Their "castle," if it could even be called that, was a desperate hodgepodge of dirt, cobblestone, and whatever other blocks they'd had in their inventories when the sun set and all hell broke loose. It sat atop a hill like some medieval fortress, except instead of planned battlements and strategic archer positions, they had panic blocks and prayer. Their beds—five colorful rectangles representing their spawn points—sat in the very center of the structure, protected by multiple layers of walls. It was their lifeline, the one thing preventing them from respawning 30,000 blocks away at the EN server's main base.
+
+The battle had been raging for what felt like hours but was probably only twenty minutes in real time. The in-game night cycle was nearly over, but they'd learned the hard way that morning didn't mean safety—just fewer mobs.
+
+Amelia had taken it upon herself to be the team's resource provider. While the others fought above ground, her character had been carving a mining operation beneath their feet, a desperate shaft that dove into the earth in search of salvation. Her pickaxe struck stone, revealing pockets of iron ore, coal, the occasional glimpse of redstone. Anything useful got immediately hauled back to the surface, dumped into furnaces that Calli had set up, and smelted into usable materials.
+
+"Got twelve iron ingots ready!" Ame announced, her voice strained from concentration. "Calli, you need armor?"
+
+"Three more chest plates if you can manage it!" Calli was playing a dangerous game, deliberately drawing aggro from the mobs to give the others room to build and repair. Her health bar kept dipping into the red, saved only by the golden apples they'd been rationing.
+
+"On it! Ina, how's the food situation?"
+
+Ina, in her typical overachieving fashion, had carved out an underground farm chamber. While everyone else fought and mined, she'd been placing dirt, installing torches, and planting every seed they had. Wheat grew in neat rows, and she'd even managed to corral a couple of chickens that had wandered too close to their fortress.
+
+"We won't starve," Ina replied with satisfaction, harvesting wheat and crafting bread with smooth efficiency. "I've got a steady supply going. Might even have carrots soon if these grow fast enough."
+
+"You're a WAHnderful human being, Ina!" Kiara's pun came despite the stress, or perhaps because of it. Humor was their defense mechanism against the madness.
+
+Calli had taken on the role of loot collector, her character darting out between attacks to grab the items dropped by slain mobs. Bones from skeletons, rotten flesh from zombies, spider eyes, gunpowder from creepers—everything went into her inventory. But she had a specific goal in mind, and when her gunpowder count hit sixty-four, she grinned.
+
+"Ame! I've got enough gunpowder! You still have that sand?"
+
+"Twenty blocks worth!" Ame's voice carried a note of excitement. She knew exactly what Calli was suggesting. "You thinking what I'm thinking?"
+
+"TNT cannon time, baby." Calli's grin was audible.
+
+The construction happened in a flurry of activity. Amelia emerged from her mine shaft, and together with Calli, they built a crude but functional TNT cannon on the northern wall—the direction where the mobs seemed thickest. It was a simple redstone contraption: a line of TNT as propellant, a block of TNT as ammunition, water to contain the blast, and a button to trigger it all.
+
+Meanwhile, Gura had taken to the offensive in her own unique way. Her trident—enchanted with Loyalty III—flew from her hand in glittering arcs, striking zombies and skeletons before magically returning to her grasp. It was almost hypnotic to watch, her character in constant motion, throwing and catching, throwing and catching.
+
+"This is actually kind of fun!" Gura laughed, the stress seeming to roll off her while everyone else remained tense. "Like, yeah, we're dying, but this is epic!"
+
+"This is YOUR fault!" Kiara reminded her, though there was no real heat in the accusation. "YOUR 'Spanish conquistador' roleplay! YOUR 'let's explore and colonize' idea!"
+
+It had seemed like such a good concept at the time. Gura, ever the history enthusiast despite her usual gremlin persona, had suggested they do a "colonization roleplay" stream—exploring the far reaches of the EN server's world, planting flags, claiming territory in the name of Hololive Myth. They'd set out with full diamond armor, weapons, food, and confidence.
+
+They'd traveled north for hours, marking their path with torches and dirt pillars. The journey had been mostly peaceful—plains, forests, a few rivers. The chat had been loving it, throwing superchats and making jokes about conquistadors. It was all going according to plan.
+
+Until Gura spotted what she swore was a jungle temple peeking out from behind some trees. The promise of treasure was too tempting to resist. They'd all agreed to investigate.
+
+What they'd found instead was a massive cave system with a creeper spawner—rare, dangerous, and completely unexpected. The subsequent exploration of that cave, combined with Gura's insistence that there had to be something valuable nearby, had led them on a wild goose chase that ended with them 30,000 blocks from home base just as the sun began to set.
+
+There was no going back before nightfall. They'd made their bed—literally, crafting five beds from wool and planks—and now they had to sleep in it. Except they couldn't actually sleep because mobs were nearby. Which was the entire problem.
+
+The siege continued. Ame's TNT cannon proved devastatingly effective, sending explosive charges into the thickest clusters of mobs with spectacular results. Calli kept the ammunition flowing, crafting more TNT whenever their supply ran low. Kiara had gotten into a rhythm with her building, creating murder holes and defensive positions that let them attack while staying protected. Ina's iron golems—she'd started crafting them from her excess iron—patrolled the perimeter with their characteristic waddle, their massive arms swinging to send mobs flying.
+
+And then, in the middle of the chaos, as a particularly large wave of zombies pressed against their southern wall, as Calli prepared to swing her sword, as Ina drew her bow, as Ame loaded another TNT charge, as Kiara frantically patched a hole in their defenses—
+
+Gura spoke.
+
+"You know what they say," she said with the sage wisdom of someone who had definitely not earned it, "life is like a dick. Sometimes it's up, sometimes it's down, but it's never hard forever."
+
+Time stopped.
+
+Not in the game—mobs continued to press forward, arrows continued to fly, a creeper began its ominous hiss. But in the real world, in that gaming room in the Hololive EN building, four idols froze in perfect synchronization.
+
+Calli's hands stopped mid-keystroke, her character's scythe (courtesy of a custom texture pack) held motionless in the air. Her jaw dropped open in an expression of pure disbelief.
+
+Kiara, wielding her diamond sword and shield, stopped moving entirely, her character taking damage from a zombie she wasn't defending against. She turned in her chair to physically stare at Gura.
+
+Ina's bow remained drawn, arrow nocked but not released, as her usually serene expression transformed into something between amusement and shock.
+
+Amelia, holding TNT and flint and steel, stood in front of her TNT cannon with her hand frozen over the keyboard, her detective's mind clearly trying to process what she'd just heard.
+
+They hit their pause buttons simultaneously, the game freezing for all five of them. The silence in the room was deafening.
+
+Four pairs of eyes turned to Gura, who sat there with an innocent smile that absolutely did not match the words that had just come out of her mouth.
+
+"It's also very short," Gura added helpfully, as if that clarified anything.
+
+"Gura." Calli's voice was strangled. "WHERE did you get that?"
+
+"Instagram!" Gura beamed, as if this explained everything. "There was this motivational quote account, and—"
+
+"That's actually kind of profound though," Ina interrupted, her head tilting thoughtfully. "In a weird, crude way, it kind of applies to our situation."
+
+Everyone turned to stare at Ina now.
+
+"Seriously?" Kiara's voice pitched upward. "You're agreeing with this?"
+
+"No, no, Ina's got a point," Amelia said slowly, her analytical mind working through it despite her better judgment. "Think about it. We're in a bad situation right now—we're down. But it won't last forever. Eventually, the sun comes up, the mobs burn, and things get better. It's... actually kind of relevant?"
+
+"Are we really going to agree with this?" Calli gestured wildly at Gura, who continued to look far too pleased with herself. "Are we seriously—"
+
+"We're idols!" Kiara interjected, as if this was the most important point. "We're supposed to be wholesome! Family-friendly! And we're sitting here talking about—"
+
+"But we're currently on the downside, right?" Ina interrupted again, her logic train unstoppable now. "We're in a bad situation, but it will get better. The metaphor actually works."
+
+"It's DICKS!" Kiara's voice hit a pitch that probably concerned their manager in the next room over. "We are talking about DICKS here!"
+
+"Oh." Gura's casual interjection cut through the argument. "I think that charged creeper is mid-explosion while we're paused. By our south wall."
+
+Four heads swiveled back to their monitors. Sure enough, the charged creeper had been approaching the wall when they'd hit pause, caught mid-waddle with its explosive charge building.
+
+"Aw maaan," they chorused again, resigned to their fate.
+
+The game resumed.
+
+The charged creeper exploded, taking a chunk of their southern wall with it and creating a gap that zombies immediately began pouring through. But something had shifted. Maybe it was Gura's ridiculous quote, maybe it was the brief moment of levity, or maybe they'd just figured out their rhythm. Whatever the cause, Hololive Myth fought with renewed vigor.
+
+Ina, in a move that made everyone else question her preparation levels, started pulling iron blocks and pumpkins from her inventory. Not just a few—stacks of them.
+
+"Ina," Ame said carefully, watching her teammate's character place iron blocks in T-formation and top them with carved pumpkins, "how long have you had those?"
+
+"Oh, I've been collecting them for a while," Ina replied with suspicious innocence. One iron golem spawned, then two, then three. "I forgot I had them until just now."
+
+"You FORGOT?" Kiara's voice was incredulous. "You forgot you could make IRON GOLEMS?"
+
+"It slipped my mind," Ina said primly, continuing to spawn the massive protectors. But she wasn't done—she pulled out name tags and an anvil, renaming each golem with careful precision. "You're Iron Tako 1. You're Iron Tako 2. Iron Tako 3..."
+
+The process continued, Ina naming each golem with the dedication of a mother naming her children. By the time she finished, twenty iron golems stood around their fortress, their massive forms creating an almost impenetrable barrier between the idols and the mob hordes.
+
+"IRON TAKO 7, PROTECT THE WESTERN FLANK!" Ina commanded, and while the golem couldn't actually hear her, it did lumber in that general direction and begin decimating zombies.
+
+The tide of battle turned. With twenty iron golems patrolling, Amelia had the breathing room she needed to focus on her TNT cannon. She loaded it, fired it, loaded it, fired it, each explosion sending mobs flying and creating craters in the hillside. The cannon's thunder became a steady rhythm, a heartbeat of destruction.
+
+Calli coordinated their defense like a general, calling out threats and directing traffic. "Kiara, eastern wall needs support! Gura, phantoms at twelve o'clock! Ina, your Iron Tako 14 is getting swarmed!"
+
+The sky began to change. The black of night faded to deep blue, then to lighter blue. The stars disappeared, replaced by the first hints of dawn.
+
+"It's the sun!" Gura's shout was triumphant.
+
+"Finally! The light!" Kiara's relief was palpable.
+
+"PRAISE THE SUN!" Calli struck a pose in her chair, arms raised, before returning to her keyboard.
+
+"Quick! Keep fighting!" Ame urged. "Push while they're burning!"
+
+And burn they did. Zombies burst into flames, their groans turning to agonized moans as they combusted. Skeletons became walking torches, firing a few last desperate arrows before crumbling to ash. The spiders and creepers, immune to daylight, became the only remaining threats—manageable threats.
+
+The iron takos advanced, their massive fists swinging. Gura's trident found its marks with increasing accuracy. Ame's TNT cannon roared one final time, sending the last cluster of creepers into oblivion. Calli charged forward, her diamond sword gleaming in the new daylight, cutting down stragglers with prejudice.
+
+Kiara and Ina worked together to eliminate the remaining spiders, their arrows and sword strikes perfectly timed. The last skeleton, hiding beneath a tree, fell to one of Gura's trident throws.
+
+Silence. Blessed, beautiful silence.
+
+"Phew..." Gura exhaled, slumping in her chair. "Finally it's over..."
+
+"I am NEVER following your Colombian journeys ever again," Calli declared, though there was fondness beneath the exasperation. "Never. Not even if you promise me an entire End City."
+
+"Hey, I'm sure we're going to find treasure eventually, I'm sure of—" Gura paused, squinting at her screen. "Wait. Is that... is that five sunken ships?"
+
+"Where?" Four voices asked simultaneously.
+
+"I think it's on that shore over there!" Gura's character turned, pointing toward a coastline visible from their hilltop fortress. "Look! Do you see them?"
+
+Everyone adjusted their view angles, zooming in on the shoreline. Sure enough, partially buried in sand and partially submerged in water, were five—count them, FIVE—sunken ships clustered together like some maritime graveyard.
+
+"Oh my god, I think it is!" Ina's voice rose with excitement.
+
+"How?!" Kiara demanded. "Like, HOW? How did you actually manage to—"
+
+"HAHAHA! I KNEW IT!" Gura was bouncing in her chair now, vindicated at last. "I KNEW there was treasure! I told you guys! I TOLD you!"
+
+They descended from their dirt fortress, leaving the iron takos to guard it (and because Ina felt bad about despawning them), and made their way to the shore. The sunken ships were tilted at various angles, their hulls broken and their masts listing. But inside those ships...
+
+"Twenty diamonds!" Ame's shriek could probably be heard in the next building. "TWENTY DIAMONDS!"
+
+"Sixteen emeralds over here!" Kiara called out, her character swimming through a submerged cargo hold.
+
+"Is this a... is this a SIXTY-FOUR STACK of gold?!" Calli's disbelief was evident. "That's an entire stack! Of GOLD!"
+
+"I found four enchanted books!" Ina reported, examining them. "Mending, Unbreaking III, Fortune II, and... oh, Curse of Binding. Well, three good ones."
+
+"Six diamond swords!" Gura announced. "They need repairs, but still! Six!"
+
+"Diamond horse armor," Kiara listed as she looted. "Nice. Coal—also nice. Oh! NETHERITE horse armor! Very nice!"
+
+"Heart of the Sea," Ina added to her inventory, along with bundles of kelp that she immediately began planning farms for.
+
+They gathered at the shore, their inventories full of treasure, their characters battered but victorious. The sun shone down on them, peaceful and warm, such a stark contrast to the nightmare they'd just endured.
+
+"Alright, pack it up, ladies!" Calli announced, taking charge. "We're going back to home base. The EN members are gonna LOVE this haul."
+
+"We're probably 30,000 blocks away," Ame reminded them, checking her coordinates.
+
+"Chat confirmed it," Gura added, reading the messages flooding past. "30,127 blocks, to be exact."
+
+"Welp." Kiara sighed, but it was a satisfied sigh. "Guess we're walking back."
+
+"A victorious march," Ina declared with characteristic grandiosity.
+
+"Onwards, Iron Takos!" Gura commanded, turning back to their fortress where the twenty golems still stood guard. "To home! To glory! To—"
+
+"Are we seriously bringing twenty iron golems back with us?" Calli interrupted.
+
+"We absolutely are," Ina said firmly. "I named them. They're part of the team now."
+
+And so Hololive Myth began their long journey home, twenty iron golems waddling behind them, their inventories stuffed with treasure, their armor damaged but intact, their spirits high despite their exhaustion. The sun shone overhead, birds chirped, and somewhere in the distance, they could hear the peaceful mooing of cows.
+
+"You know," Kiara said after a few minutes of walking, "that quote thing actually did kind of help."
+
+"Don't encourage her," Calli groaned.
+
+"Life really is like a—"
+
+"GURA!"
+
+Their laughter echoed across the digital landscape, five idols heading home after their greatest adventure yet, ready to regale their EN colleagues with tales of the Siege of Dirt Castle and the treasure that made it all worthwhile.
+
+In the gaming room, five satisfied smiles told the real story. This was what Hololive was all about—chaos, friendship, terrible decisions, and somehow, against all odds, victory.
+
+Though they all silently agreed… The next time Gura suggested exploration, they were checking the coordinates first.
