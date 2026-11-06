@@ -15,7 +15,7 @@ export const SITE = {
   stats: [
     { n: "160K+", t: "Wattpad reads" },
     { n: "19", t: "Stories published" },
-    { n: "3", t: "Cisco certifications" },
+    { n: "16", t: "Certificates" },
   ],
   skills: [
     { n: "2D Illustration", v: 92 },
