@@ -6,9 +6,71 @@
   <base href="/">
   <title>Drew David S Abanilla — Artist &amp; Author</title>
 <link rel="stylesheet" href="/styles.css">
+<style>
+/* ---------- LOADER (inline so it paints before styles.css/app.js finish) ---------- */
+#loaderEl{position:fixed;inset:0;z-index:9999;display:flex;align-items:center;justify-content:center;padding:20px;
+background:radial-gradient(900px 420px at 50% 18%, rgba(36,86,196,.35), transparent 65%),linear-gradient(180deg,#0c1b4d 0%,#0e2052 100%);
+transition:opacity .55s ease, visibility .55s}
+#loaderEl.done{opacity:0;visibility:hidden;pointer-events:none}
+.loaderCard{display:flex;flex-direction:column;align-items:center;text-align:center;color:#fff;max-width:320px}
+.loaderRing{width:84px;height:84px;border-radius:50%;display:grid;place-items:center;position:relative;
+background:conic-gradient(from 0deg,#f2b705,#ffd94d,#2456c4,#f2b705);
+animation:loaderSpin 1.1s linear infinite;box-shadow:0 0 44px rgba(242,183,5,.45)}
+.loaderRing::before{content:"";position:absolute;inset:6px;border-radius:50%;background:#0c1b4d}
+.loaderRing span{position:relative;font-weight:900;font-size:22px;color:#ffd94d;letter-spacing:.5px}
+@keyframes loaderSpin{to{transform:rotate(360deg)}}
+.loaderName{margin-top:18px;font-weight:900;font-size:19px;letter-spacing:-.2px}
+.loaderSub{margin-top:4px;font-size:11px;font-weight:800;letter-spacing:2.4px;text-transform:uppercase;color:#ffd94d}
+.loaderBar{width:230px;max-width:70vw;height:8px;border-radius:100px;background:rgba(255,255,255,.16);margin-top:18px;overflow:hidden;border:1px solid rgba(255,255,255,.18)}
+.loaderBar i{display:block;height:100%;width:0%;border-radius:100px;background:linear-gradient(90deg,#b97f04,#f2b705,#ffd94d);transition:width .18s ease}
+.loaderPct{margin-top:8px;font-size:12px;font-weight:800;color:rgba(255,255,255,.75);font-variant-numeric:tabular-nums}
+.loaderTip{margin-top:6px;font-size:12.5px;color:rgba(255,255,255,.6);font-weight:600;min-height:18px}
+@media(prefers-reduced-motion:reduce){.loaderRing{animation:none}#loaderEl{transition:none}}
+</style>
 
 </head>
 <body>
+<div id="loaderEl" role="status" aria-live="polite" aria-label="Loading portfolio">
+<div class="loaderCard">
+<div class="loaderRing" aria-hidden="true"><span>DA</span></div>
+<div class="loaderName">Drew David S Abanilla</div>
+<div class="loaderSub">Artist &amp; Author</div>
+<div class="loaderBar"><i id="loaderBarEl"></i></div>
+<div class="loaderPct" id="loaderPctEl">0%</div>
+<div class="loaderTip" id="loaderTipEl">Loading artworks &amp; stories…</div>
+</div>
+</div>
+<script>
+(function(){
+var el=document.getElementById('loaderEl'); if(!el) return;
+var bar=document.getElementById('loaderBarEl'), pct=document.getElementById('loaderPctEl'), tip=document.getElementById('loaderTipEl');
+var reduced=window.matchMedia&&matchMedia('(prefers-reduced-motion: reduce)').matches;
+try{document.body.style.overflow='hidden';}catch(_e){}
+var tips=['Loading artworks & stories…','Polishing the gallery…','Binding the storybooks…','Hanging the posters…','Almost there…'];
+var ti=0, tipT=setInterval(function(){ ti=(ti+1)%tips.length; if(tip) tip.textContent=tips[ti]; },1600);
+var p=0, ready=false, loaded=document.readyState==='complete', t0=Date.now();
+var MIN=reduced?100:900, SOFT=3500, HARD=9000, done=false;
+function paint(){ if(bar) bar.style.width=Math.floor(p)+'%'; if(pct) pct.textContent=Math.floor(p)+'%'; }
+function finish(){
+if(done) return; done=true; p=100; paint(); clearInterval(tipT); clearInterval(tickT);
+try{document.body.style.overflow='';}catch(_e){}
+el.classList.add('done'); setTimeout(function(){ if(el.parentNode) el.parentNode.removeChild(el); },650);
+}
+window.addEventListener('load',function(){ loaded=true; });
+window.addEventListener('portfolio:ready',function(){ ready=true; });
+window.__hidePortfolioLoader=finish;
+var tickT=setInterval(function(){
+if(done) return;
+var t=Date.now()-t0;
+var target=(ready&&loaded)?100:(ready||loaded)?92:72;
+p+=(target-p)*0.12+0.4; if(p>target&&target<100) p=target;
+paint();
+if(ready&&t>MIN&&(loaded||t>SOFT)) finish();
+else if(t>HARD) finish();
+},140);
+paint();
+})();
+</script>
 <header class="topNav" id="topNavEl">
   <div class="scrollProg" id="scrollProgEl"></div>
   <a class="skipLink" href="#home">Skip to content ↓</a>
@@ -19,7 +81,7 @@
   <div class="mainBar">
     <a class="brandWrap" href="#home" aria-label="Back to top — home">
       <span class="logoDot" id="logoEl">YN</span>
-      <span class="brandName"><span id="brandNameEl">Artist & Author</span><small id="brandSubEl">Lead Artist • PlayfulSparks Production BDP</small></span>
+      <span class="brandName"><span id="brandNameEl">Artist & Author</span><small id="brandSubEl">CS Student • Freelance Illustrator</small></span>
     </a>
     <nav class="navLinks" id="navLinksEl" aria-label="Sections">
       <span class="navInk" id="navInkEl" aria-hidden="true"></span>
@@ -257,7 +319,7 @@
 <footer>
   <div class="footIn">
     <span><b id="footNameEl">Your Name</b> • <span id="footTagEl">My Portfolio</span></span>
-    <span style="opacity:.85">Lead Artist & Author • PlayfulSparks Production BDP • Lapu-Lapu, Philippines</span>
+    <span style="opacity:.85">Illustrator & Author • ACLC College of Mandaue • Lapu-Lapu, Philippines</span>
   </div>
 </footer>
 

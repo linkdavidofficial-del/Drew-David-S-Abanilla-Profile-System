@@ -1,5 +1,21 @@
 import { SITE } from "./data.js";
 
+/* Asset base: the same code runs at the site root on Vercel (/js/app.js) and
+   under Perchance preview (…/src/js/app.js), where page-relative assets live
+   in src/. Derive the prefix from this module's own URL so both just work. */
+const ASSET_PREFIX = new URL(".", import.meta.url).pathname.includes("/src/js/") ? "src/" : "";
+const ASSET_KEYS = new Set(["img", "backdrop", "file", "pageDir", "pdf", "bookCover"]);
+(function prefixAssets(node){
+  if (Array.isArray(node)){ node.forEach(prefixAssets); return; }
+  if (node && typeof node === "object"){
+    for (const k of Object.keys(node)){
+      const v = node[k];
+      if (ASSET_KEYS.has(k) && typeof v === "string" && v && !/^(?:[a-z]+:|\/|#)/i.test(v)) node[k] = ASSET_PREFIX + v;
+      else prefixAssets(v);
+    }
+  }
+})(SITE);
+
 function illusArt(a, i){
   if (a && a.img) return `<img src="${a.img}" alt="${esc(a.title)}" loading="lazy">`;
   return artSVG(a.colors, i + 2);
@@ -78,12 +94,12 @@ function render(){
   $("heroIntroEl").textContent = SITE.intro;
  $("heroMetaEl").innerHTML =
       `<div class="metaCard"><span class="ic">📍</span><span><small>Based in</small><strong>${esc(SITE.location)}</strong></span></div>`
-    + `<div class="metaCard"><span class="ic">🎓</span><span><small>Work</small><strong>${esc(SITE.school)}</strong></span></div>`
+    + `<div class="metaCard"><span class="ic">🎓</span><span><small>School</small><strong>${esc(SITE.school)}</strong></span></div>`
     + `<div class="metaCard"><span class="ic">@</span><span><small>Email</small><strong>${esc(SITE.email)}</strong></span></div>`;
   const _st = $("heroStatsEl");
   if (_st && SITE.stats) _st.innerHTML = SITE.stats.map(s => `<div class="stat"><b>${esc(s.n)}</b><span>${esc(s.t)}</span></div>`).join("");
-  $("heroPhotoEl").innerHTML = `<img src="profile.png" alt="Profile photo of ${esc(SITE.name)}">`;
-  $("aboutPhotoEl").innerHTML = `<img src="profile.png" alt="Photo of ${esc(SITE.name)}">`;
+  $("heroPhotoEl").innerHTML = `<img src="${ASSET_PREFIX}profile.png" alt="Profile photo of ${esc(SITE.name)}">`;
+  $("aboutPhotoEl").innerHTML = `<img src="${ASSET_PREFIX}profile.png" alt="Photo of ${esc(SITE.name)}">`;
   $("heroSocialEl").innerHTML = SITE.socials.map(s =>
     `<a href="${esc(s.href)}" target="_blank" rel="noopener">${esc(s.label)}</a>`).join("");
   $("logoEl").textContent = SITE.name.split(" ").map(w => w[0]).join("").slice(0, 2).toUpperCase();
@@ -434,7 +450,7 @@ async function loadChapter(s, i){
   const box = $("selBodyEl"); if (!box) return;
   try {
     let txt = chapCache[s.file];
-    if (!txt){ const r = await fetch(s.file); txt = await r.text(); chapCache[s.file] = txt; }
+    if (!txt){ const r = await fetch(s.file); if (!r.ok) throw new Error("Chapter request failed: " + r.status); txt = await r.text(); chapCache[s.file] = txt; }
     if (selChapIdx !== i) return;
     const parts = txt.split(/\n\n+/).filter(Boolean);
     const head = parts.length && /^Chapter \d+:/i.test(parts[0]) ? parts.shift() : null;
@@ -583,7 +599,7 @@ async function openReader(ci, historyMode, picturePage){
   syncBodyLock();
   try {
     let txt = chapCache[c.file];
-    if (!txt){ const r = await fetch(c.file); txt = await r.text(); chapCache[c.file] = txt; }
+    if (!txt){ const r = await fetch(c.file); if (!r.ok) throw new Error("Chapter request failed: " + r.status); txt = await r.text(); chapCache[c.file] = txt; }
     if (t !== readerToken) return;
     const parts = txt.split(/\n\n+/).filter(Boolean);
     if (parts.length && /^Chapter \d+:/i.test(parts[0])) parts.shift();
@@ -693,8 +709,13 @@ function setFeatAch(i){
   const a = SITE.achievements[i]; if (!a) return;
   document.querySelectorAll("#achPillsEl .pill").forEach(b =>
     b.classList.toggle("on", +b.dataset.i === i));
-  $("achFeatEl").innerHTML = `<div class="big">${a.icon}</div><h3>${esc(a.title)}</h3>`
+  const imgHtml = a.img
+    ? `<button class="achImgBtn" data-zoom="${a.img}" type="button" aria-label="Enlarge certificate — ${esc(a.title)}"><img src="${a.img}" alt="Certificate — ${esc(a.title)}" loading="lazy"></button><span class="achZoomHint">Click certificate to enlarge ⤢</span>`
+    : `<div class="big">${a.icon || "🏆"}</div>`;
+  $("achFeatEl").innerHTML = `${imgHtml}<h3>${esc(a.title)}</h3>`
     + `<p><b>${esc(a.org)}</b></p><p>${esc(a.text)}</p><span class="year">Verified • ${esc(a.org)}</span>`;
+  const zb = $("achFeatEl").querySelector("[data-zoom]");
+  if (zb) zb.onclick = () => openView(a.title, `<div style="border-radius:12px;overflow:hidden;border:1px solid #e1e7f8"><img src="${a.img}" alt="${esc(a.title)}" style="width:100%;display:block"></div><p style="margin:12px 0 0"><b>${esc(a.org)}</b></p><p>${esc(a.text)}</p>`);
 }
 
 function drawCast(){
@@ -848,7 +869,7 @@ function renderHomeUpgrade(){
     var pf = document.getElementById("profileFactsEl");
     if (pf) pf.innerHTML =
       "<div><small>Based in</small><strong>" + esc(SITE.location || "") + "</strong></div>"
-      + "<div><small>Work</small><strong>" + esc(SITE.school || "") + "</strong></div>";
+      + "<div><small>School</small><strong>" + esc(SITE.school || "") + "</strong></div>";
     var fw = document.getElementById("fbWorksEl");
     if (fw) fw.textContent = (SITE.illustrations ? SITE.illustrations.length : 0) + "+";
     var fb = document.getElementById("fbBooksEl");
@@ -1134,3 +1155,5 @@ $("toTopBtn").onclick = () => scrollTo({ top: 0, behavior: "smooth" });
 render();
 renderHomeUpgrade();
 syncStoryRoute();
+/* Tell the loader overlay (index.html) that first render is done. */
+try { window.dispatchEvent(new Event("portfolio:ready")); } catch(_e) {}
