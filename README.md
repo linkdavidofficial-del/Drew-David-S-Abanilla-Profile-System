@@ -29,3 +29,16 @@ Each book and reading view has its own shareable URL. The selected chapter or pa
   module URL (`…/src/js/app.js`) and prefixes every asset key
   (`img`, `backdrop`, `file`, `pageDir`, `pdf`, `bookCover`) plus
   `profile.png`, so no data edits are needed per host.
+
+## Run locally
+
+From the project root, open a PowerShell terminal and start a local HTTP server:
+
+```powershell
+python -m http.server 8765 --bind 127.0.0.1
+```
+
+Then open <http://127.0.0.1:8765/> in your browser. Keep the terminal running
+while using the site; press `Ctrl+C` there to stop the server. Do not open
+`index.html` directly as a `file://` URL, because the site uses JavaScript
+modules and root-relative asset paths that require HTTP.
